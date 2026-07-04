@@ -106,7 +106,8 @@ a:focus-visible {
   color: var(--fg-hover);
 }
 
-a[target="_blank"]::before {
+a[target="_blank"]::before,
+a[href^="mailto:"]::before {
   content: "↗";
   display: inline-block;
   margin-right: 0.4em;
