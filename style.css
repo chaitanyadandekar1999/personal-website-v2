@@ -1,7 +1,7 @@
 :root {
   --bg: #ffffff;
   --fg: #71717a;
-  --fg-hover: #000000;
+  --fg-hover: #333333;
 }
 
 * {
@@ -96,14 +96,17 @@ body {
 
 a {
   color: inherit;
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 0.15em;
   outline: none;
-  transition: color 0.3s;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
 }
 
 a:hover,
 a:focus-visible {
   color: var(--fg-hover);
+  text-decoration-color: currentColor;
 }
 
 a[target="_blank"]::before,
