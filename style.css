@@ -58,7 +58,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 8rem 2rem;
 }
 
@@ -128,6 +128,10 @@ a[href^="mailto:"]::before {
 .reveal.is-visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+.reveal-scroll {
+  will-change: opacity, transform;
 }
 
 @media (prefers-reduced-motion: reduce) {
