@@ -106,6 +106,13 @@ a:focus-visible {
   color: var(--fg-hover);
 }
 
+a[target="_blank"]::before {
+  content: "↗";
+  display: inline-block;
+  margin-right: 0.4em;
+  font-size: 0.85em;
+}
+
 /* reveal-on-scroll */
 
 .reveal {
